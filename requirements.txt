@@ -1,0 +1,48 @@
+# Полная версия с поддержкой локальной модели
+# Внимание: bitsandbytes может не работать на Windows!
+# Для Windows используйте requirements-simple.txt
+
+streamlit>=1.28.0
+python-dotenv>=1.0.0
+langchain>=0.1.0
+langchain-community>=0.0.10
+langchain-core>=0.1.10
+langchain-chroma>=0.1.0
+openai>=1.3.0
+transformers>=4.35.0
+accelerate>=0.25.0
+sentence-transformers>=2.2.2
+
+# Векторные БД (обе варианта)
+faiss-cpu>=1.7.4
+chromadb>=0.4.0
+torch>=2.1.0
+huggingface-hub>=0.16.4,<0.18
+
+# Локальная обработка документов (бесплатно!)
+# Основной пакет
+unstructured>=0.11.0
+
+# Поддержка PDF (обязательно для PDF файлов)
+unstructured[pdf]>=0.11.0
+pypdf>=3.17.0
+pdf2image>=1.16.0
+pdfminer.six>=20221105
+pikepdf>=8.0.0
+
+# Поддержка DOCX/DOC файлов (обязательно для Word)
+unstructured[docx]>=0.11.0
+python-docx>=0.8.11
+python-pptx>=0.6.21
+
+# Обработка изображений (опционально, для hi_res стратегии)
+Pillow>=10.0.0
+pytesseract>=0.3.10
+
+# Дополнительные утилиты
+langdetect>=1.0.9
+chardet>=5.0.0
+
+# bitsandbytes - закомментировано, работает только на Linux с CUDA
+# bitsandbytes>=0.41.0
+

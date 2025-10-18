@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+
+# Project specific
+# Векторные базы данных (генерируются локально)
+chroma_db/
+faiss_index/
+output/
+
+# Обработанные данные (генерируются локально)
+catalog.json
+
+# Логи
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Временные файлы
+*.tmp
+*.temp
+~$*
+
+# Данные пользователя (опционально - закомментируйте если хотите включить примеры)
+# Data/
+
+# Модели (если скачиваются локально)
+models/
+*.bin
+*.onnx
+
+# Странные файлы с версиями
+0.*/
+*.*/
+[0-9]*/
